@@ -4,6 +4,14 @@ A modern, fully responsive landing page focused on **clean CSS**, **fluid typogr
 
 ---
 
+## 🔗 Deploy
+
+### 🔗 Access the page published here:  
+
+👉 https://kelvesmoura.github.io/Landing-Page-Personal/
+
+---
+
 ## ✨ Key Goals
 
 * 📐 Fluid responsiveness across all screen sizes
