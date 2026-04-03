@@ -1,0 +1,45 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: min(5vw, 30px);
+  width: min(90%, 70rem);
+}
+
+.entrega,
+.qualidade,
+.suporte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: min(5vw, 30px);
+  border: 1px solid #003918;
+  border-radius: 10px;
+  margin-top: min(1vw, 40px);
+}
+
+.entrega:hover,
+.qualidade:hover,
+.suporte:hover {
+  border: 1px solid var(--green-color);
+}
+
+.entrega h3,
+.qualidade h3,
+.suporte h3 {
+  font-size: min(1.25rem, 22px);
+}
+
+.entrega span,
+.qualidade span,
+.suporte span {
+  font-size: min(1rem, 20px);
+}
+
+.rocket-icon,
+.award-icon,
+.check-icon {
+  width: min(10vw, 55px);
+  height: 55px;
+  fill: var(--green-color);
+}

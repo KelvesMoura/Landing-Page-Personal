@@ -1,0 +1,238 @@
+.prices-section,
+.services-section,
+.depoimentos-section,
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: min(5vw, 30px);
+  width: auto;
+  padding: 0px min(5%, 5px);
+  margin: 80px 0;
+  animation: scrolling;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.info-prices,
+.info-services,
+.info-depoimentos,
+.info-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+  width: min(90%, 70rem);
+  gap: 30px;
+}
+
+.title-price h2,
+.title-service h2,
+.title-depoimento h2,
+.title-faq h2,
+.title-cta2 h2 {
+  font-size: clamp(10px, 2rem, 3rem);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle-price,
+.subtitle-services,
+.subtitle-depoimentos,
+.subtitle-faq {
+  font-size: min(5vw, 1rem);
+  width: min(75%, 80vw);
+  text-align: center;
+  color: #cad2d4;
+}
+
+.button-cta1 button:hover {
+  background: #1f2937;
+}
+
+.plano-pro .label {
+  background: var(--yellow-color);
+  border: none;
+}
+
+.plano-master .label {
+  background: var(--red-color);
+  border: none;
+}
+
+.plano-start,
+.plano-pro,
+.plano-master {
+  border: 1px solid #003918;
+  border-radius: 10px;
+  background: #010502;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  height: fit-content;
+  align-self: center;
+}
+
+.plano-pro {
+  height: 500px;
+}
+
+.plano-start:hover,
+.plano-pro:hover,
+.plano-master:hover {
+  border: 1px solid var(--green-color);
+  border-radius: 10px;
+}
+
+.plano-pro:hover {
+  border: 1px solid var(--yellow-color);
+}
+
+.plano-master:hover {
+  border: 1px solid var(--red-color);
+}
+
+.plano-pro {
+  border: 1px solid var(--yellow-color);
+  background: #0c0901;
+}
+
+.plano-master {
+  border: 1px solid #4d1616;
+  background: #060202;
+}
+
+.subtitle-plan {
+  font-size: min(4vw, 1rem);
+}
+
+.star-section,
+.planos-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.star-section {
+  justify-content: flex-end;
+}
+
+.star-start,
+.star-pro,
+.star-master {
+  width: 20px;
+  height: 20px;
+  fill: var(--green-color);
+  align-self: flex-end;
+}
+
+.star-pro {
+  fill: var(--yellow-color);
+}
+
+.star-master {
+  fill: var(--red-color);
+}
+
+.features {
+  margin: 0;
+  padding: 0;
+}
+
+.features ul li {
+  font-size: min(4vw, 1rem);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.check-green,
+.check-yellow,
+.check-red {
+  width: 20px;
+  height: 20px;
+  fill: var(--green-color);
+  margin-right: 5px;
+}
+
+.check-yellow {
+  fill: var(--yellow-color);
+}
+
+.check-red {
+  fill: var(--red-color);
+}
+
+.prazo-plano-start,
+.prazo-plano-pro,
+.prazo-plano-master {
+  background-color: #03170b;
+  border: 1px solid var(--green-color);
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-size: min(3.9vw, 0.95rem);
+}
+
+.prazo-plano-start .clock-icon {
+  fill: var(--green-color);
+}
+
+.prazo-plano-pro .clock-icon {
+  fill: var(--yellow-color);
+}
+
+.prazo-plano-master .clock-icon {
+  fill: var(--red-color);
+}
+
+.prazo-plano-pro {
+  background-color: #1d1602;
+  border: 1px solid var(--yellow-color);
+}
+
+.prazo-plano-master {
+  background-color: #060202;
+  border: 1px solid var(--red-color);
+}
+
+.button-plano,
+.plano-pro .button-plano,
+.plano-master .button-plano {
+  text-transform: uppercase;
+  background: var(--green-color);
+  border: 1px solid var(--green-color);
+  padding: 10px;
+  min-width: auto;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.plano-pro .button-plano {
+  background: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+}
+
+.plano-master .button-plano {
+  background: var(--red-color);
+  border: 1px solid var(--red-color);
+}

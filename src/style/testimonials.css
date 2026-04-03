@@ -1,0 +1,46 @@
+.depoimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: min(5vw, 20px);
+  padding: min(5vw, 30px);
+  border: 1px solid #003918;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.depoimento:hover {
+  border: 1px solid var(--green-color);
+}
+
+.depoimento span {
+  font-style: italic;
+  text-align: center;
+  font-size: min(5vw, 1rem);
+  line-height: 25px;
+}
+
+.customer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.customer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.customer h3 {
+  color: var(--dark-gray-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cards .depoimento {
+  align-items: center;
+  justify-content: space-between;
+}

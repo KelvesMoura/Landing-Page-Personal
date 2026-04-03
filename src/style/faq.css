@@ -1,0 +1,29 @@
+
+.faq-perguntas {
+	display: flex;
+	flex-direction: column;
+	gap: min(5vw, 30px);
+}
+.card-perguntas {
+	border: 1px solid #002e13;
+	border-radius: 10px;
+	padding: min(5vw, 20px);
+	width: min(80vw, 65rem);
+}
+
+.card-perguntas span {
+	color: var(--gray-color);
+	font-size: min(4vw, 1rem);
+}
+
+.rights {
+	text-align: center;
+	padding: 10px;
+}
+
+footer .rights p {
+	font-size: min(4vw, 0.75rem);
+	letter-spacing: 1px;
+}
+
+
