@@ -12,12 +12,26 @@ A modern, fully responsive landing page focused on **clean CSS**, **fluid typogr
 
 ---
 
+## 📋 Page Sections
+
+| Section          | Description                                                                |
+| ---------------- | -------------------------------------------------------------------------- |
+| **Hero**         | Main headline, value proposition and contact buttons (WhatsApp / Call now) |
+| **CTA**          | Urgency banner with limited-time offer                                     |
+| **Plans**        | Three service tiers: Start, Pro and Master                                 |
+| **Testimonials** | Real client review cards                                                   |
+| **FAQ**          | Common questions about deadlines, payment and customization                |
+| **Final CTA**    | Quote request with crypto/PIX payment highlight                            |
+
+---
+
 ## ✨ Key Goals
 
 - 📐 Fluid responsiveness across all screen sizes
 - 🎨 Scalable typography and spacing
 - ⚡ Lightweight and performance-oriented CSS
 - 🧠 Smart use of modern CSS features
+- 💸 Conversion-focused layout and copywriting
 
 ---
 
@@ -42,23 +56,25 @@ This approach improves **organization, readability, and scalability** of the pro
 
 ### 📂 CSS Structure
 
-css/  
-│  
-├── index.css # Main stylesheet (imports all modules)  
-├── global.css # Reset, variables and base styles  
-├── hero.css # Hero section  
-├── cta.css # Call-to-action section  
-├── services.css # Services section  
-├── benefits.css # Benefits section  
-├── testimonials.css # Testimonials section  
-├── faq.css # FAQ section  
-└── mobile.css # Mobile-specific adjustments
+```
+src/style/
+│
+├── index.css           # Main stylesheet (imports all modules)
+├── global.css          # Reset, variables and base styles
+├── hero.css            # Hero section
+├── cta.css             # Call-to-action sections
+├── services.css        # Services / Plans section
+├── benefits.css        # Benefits section
+├── testimonials.css    # Testimonials section
+├── faq.css             # FAQ section
+└── mobile.css          # Mobile-specific adjustments
+```
 
 ### 🔗 CSS Module Import
 
 The main stylesheet loads each section using `@import`.
 
-````css
+```css
 @import url(global.css);
 @import url(hero.css);
 @import url(cta.css);
@@ -67,6 +83,7 @@ The main stylesheet loads each section using `@import`.
 @import url(testimonials.css);
 @import url(faq.css);
 @import url(mobile.css);
+```
 
 ---
 
@@ -80,7 +97,7 @@ Instead of stacking dozens of media queries, this project relies on **fluid scal
 
 ```css
 font-size: clamp(1rem, 2.5vw, 2rem);
-````
+```
 
 ✅ Prevents text from becoming too small or too large
 ✅ Adapts naturally to any screen width
@@ -100,6 +117,16 @@ Example:
 ```css
 padding: clamp(1rem, 4vw, 3rem);
 ```
+
+---
+
+## 💳 Payment Methods
+
+The landing page highlights the following payment options:
+
+- ₿ Cryptocurrencies (BTC & USDT) — **5% discount**
+- 🏦 Bank slip (Boleto)
+- ⚡ PIX
 
 ---
 
@@ -123,15 +150,16 @@ padding: clamp(1rem, 4vw, 3rem);
 
 ## 🛠️ How to Improve Further
 
-- 🌙 Add dark mode using CSS variables
-- ♿ Enhance accessibility (ARIA + contrast checks)
-- 🚀 Optimize animations with `prefers-reduced-motion`
-- 📦 Modularize CSS with utility classes
+- [ ] 🌙 Add dark mode using CSS variables
+- [ ] ♿ Enhance accessibility (ARIA + contrast checks)
+- [ ] 🚀 Optimize animations with `prefers-reduced-motion`
+- [ ] 🔗 Connect CTA buttons to real WhatsApp links
+- [ ] 📦 Add Open Graph meta tags for better SEO
 
 ---
 
 ## 📌 Final Thoughts
 
-This project demonstrates how **modern CSS alone** can deliver a premium responsive experience — clean, scalable, and future-proof. Perfect for landing pages that need to **convert well** and **look great everywhere** 🌍
+This project demonstrates how **modern CSS alone** can deliver a premium responsive experience — clean, scalable, and conversion-ready. Perfect for landing pages that need to **convert well** and **look great everywhere** 🌍
 
 Happy building! 💙
