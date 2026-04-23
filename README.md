@@ -1,6 +1,6 @@
-# 🚀 Responsive Landing Page Project
+# 🚀 Personal Landing Page — Kelves Moura
 
-A modern, fully responsive landing page focused on **clean CSS**, **fluid typography**, and **adaptive layouts** using cutting-edge techniques like `clamp()`. This project is designed to look sharp on **mobile 📱**, **tablet 📟**, and **desktop 🖥️** without relying heavily on media queries.
+A modern, fully responsive **personal landing page** focused on **conversion**, **clean CSS**, and **fluid typography** using cutting-edge techniques like `clamp()`. Built to present Web Design services and turn visitors into clients — looking sharp on **mobile 📱**, **tablet 📟**, and **desktop 🖥️** without relying heavily on media queries.
 
 ---
 
@@ -41,6 +41,8 @@ A modern, fully responsive landing page focused on **clean CSS**, **fluid typogr
 - **CSS3** – Modern layout and styling
 - **Flexbox & Grid** – Responsive layout foundation
 - **CSS `clamp()`** – Dynamic sizing without breakpoints
+- **Google Fonts (Roboto)** – Consistent typography via CDN
+- **GitHub Pages** – Continuous deployment from the `main` branch
 
 ---
 
@@ -54,20 +56,35 @@ This approach improves **organization, readability, and scalability** of the pro
 
 ---
 
-### 📂 CSS Structure
+### 📂 Project Structure
 
 ```
-src/style/
+Landing-Page-Personal/
 │
-├── index.css           # Main stylesheet (imports all modules)
-├── global.css          # Reset, variables and base styles
-├── hero.css            # Hero section
-├── cta.css             # Call-to-action sections
-├── services.css        # Services / Plans section
-├── benefits.css        # Benefits section
-├── testimonials.css    # Testimonials section
-├── faq.css             # FAQ section
-└── mobile.css          # Mobile-specific adjustments
+├── index.html
+├── README.md
+├── .gitignore
+│
+└── src/
+    ├── assets/
+    │   ├── icon/
+    │   │   └── Favicon-Site.ico
+    │   └── images/
+    │       ├── image.png
+    │       ├── image2.webp
+    │       ├── image3.webp
+    │       └── image4.webp
+    │
+    └── style/
+        ├── index.css           # Main stylesheet (imports all modules)
+        ├── global.css          # Reset, variables and base styles
+        ├── hero.css            # Hero section
+        ├── cta.css             # Call-to-action sections
+        ├── services.css        # Services / Plans section
+        ├── benefits.css        # Benefits section
+        ├── testimonials.css    # Testimonials section
+        ├── faq.css             # FAQ section
+        └── mobile.css          # Mobile-specific adjustments
 ```
 
 ### 🔗 CSS Module Import
@@ -83,6 +100,27 @@ The main stylesheet loads each section using `@import`.
 @import url(testimonials.css);
 @import url(faq.css);
 @import url(mobile.css);
+```
+
+---
+
+## 🎨 Global CSS Variables
+
+Defined in `global.css`, variables ensure visual consistency across the entire project:
+
+```css
+:root {
+  --font-family: "Roboto", sans-serif;
+  --green-color: #00c553;
+  --dark-green-color: #009c42;
+  --yellow-color: #eab308;
+  --red-color: #ef4444;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #c4cbcd;
+  --dark-gray-color: #464a4e;
+  --black-button-hover-color: #1b3626;
+}
 ```
 
 ---
@@ -148,6 +186,24 @@ The landing page highlights the following payment options:
 
 ---
 
+## 🖥️ Running Locally
+
+No installation required. This is a pure HTML + CSS project — just open it in your browser:
+
+```bash
+# Clone the repository
+git clone https://github.com/kelvesmoura/Landing-Page-Personal.git
+
+# Navigate to the folder
+cd Landing-Page-Personal
+
+# Open in browser
+# Option 1: double-click index.html
+# Option 2: use Live Server extension in VS Code
+```
+
+---
+
 ## 🛠️ How to Improve Further
 
 - [ ] 🌙 Add dark mode using CSS variables
@@ -155,6 +211,7 @@ The landing page highlights the following payment options:
 - [ ] 🚀 Optimize animations with `prefers-reduced-motion`
 - [ ] 🔗 Connect CTA buttons to real WhatsApp links
 - [ ] 📦 Add Open Graph meta tags for better SEO
+- [ ] 🖼️ Implement lazy loading on images
 
 ---
 
